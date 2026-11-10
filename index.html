@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dentiste et médecine générale à Molenbeek | Clinique Ribaucourt</title>
+<meta name="description" content="Clinique médico-dentaire Ribaucourt à Molenbeek : soins dentaires, orthodontie et médecine générale. Du lundi au vendredi, 9h–17h. Rendez-vous : 02 411 68 11.">
+
+<meta name="theme-color" content="#12186b">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://clinique-ribaucourt.com/">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Clinique Médico-Dentaire Ribaucourt">
+<meta property="og:title" content="Clinique Ribaucourt · Molenbeek">
+<meta property="og:description" content="Soins dentaires et médecine générale, sur rendez-vous. Lundi–vendredi : 9h–17h. 02 411 68 11.">
+<meta property="og:url" content="https://clinique-ribaucourt.com/">
+<meta property="og:image" content="https://clinique-ribaucourt.com/apercu-partage.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clinique Médico-Dentaire Ribaucourt, Rue de Ribaucourt 77 à Molenbeek. Rendez-vous au 02 411 68 11, de 9h à 17h du lundi au vendredi.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clinique Ribaucourt · Molenbeek">
+<meta name="twitter:description" content="Soins dentaires et médecine générale. Sur rendez-vous, du lundi au vendredi de 9h à 17h.">
+<meta name="twitter:image" content="https://clinique-ribaucourt.com/apercu-partage.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "@id": "https://clinique-ribaucourt.com/#clinique", "name": "Clinique Médico-Dentaire Ribaucourt", "url": "https://clinique-ribaucourt.com/", "telephone": "+3224116811", "image": "https://clinique-ribaucourt.com/apercu-partage.png", "address": {"@type": "PostalAddress", "streetAddress": "Rue de Ribaucourt 77", "postalCode": "1080", "addressLocality": "Molenbeek-Saint-Jean", "addressCountry": "BE"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}]}</script>
+<style>
+:root{
+  --navy:#12186b;
+  --teal:#66d4bc;
+  --teal-soft:#c8f9ef;
+  --purple:#6654c4;
+  --coral:#e0524d;
+  --bg:#ffffff;
+  --card:#f4f4f5;
+  --ink:#16161d;
+  --muted:#5b5b66;
+  --line:#dcdce0;
+  --on-teal:#0b1a17;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#10121a;
+    --card:#1b1e2a;
+    --ink:#f2f2f6;
+    --muted:#a9abb8;
+    --line:#2e3242;
+    --teal-soft:#16352f;
+    --navy:#0b0f4a;
+  }
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:"Avenir Next","Nunito Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;
+  padding-bottom:84px;
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--purple);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* barre d'info */
+.topbar{background:var(--navy);color:#fff;text-align:center;padding:10px 16px;font-size:15px}
+.topbar p+p{margin-top:2px}
+.topbar b{font-weight:800}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#9aa;margin-right:6px}
+.dot.open{background:var(--teal)}
+
+/* en-tête */
+header{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:22px;letter-spacing:-.02em;line-height:1.05}
+.logo svg{flex:none}
+.logo small{display:block;font-weight:600;font-size:12.5px;color:var(--muted);letter-spacing:0}
+.menu-btn{
+  width:52px;height:52px;border-radius:10px;border:2px solid var(--navy);
+  background:var(--purple);cursor:pointer;display:grid;place-items:center;
+}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{
+  display:block;width:24px;height:3px;background:#fff;border-radius:2px;position:relative;transition:transform .2s,background .2s;
+}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-8px}.menu-btn span::after{top:8px}
+.menu-btn[aria-expanded="true"] span{background:transparent}
+.menu-btn[aria-expanded="true"] span::before{transform:translateY(8px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span::after{transform:translateY(-8px) rotate(-45deg)}
+
+/* menu plein écran */
+.overlay{
+  position:fixed;inset:76px 0 0 0;z-index:25;background:var(--bg);
+  display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+}
+.overlay.show{display:flex}
+.overlay a{
+  font-weight:800;font-size:20px;text-decoration:none;padding:14px 28px;width:min(340px,86vw);text-align:center;border-radius:6px;
+}
+.overlay a:hover,.overlay a:focus-visible{background:var(--teal-soft)}
+.overlay a.call{background:var(--teal);color:var(--on-teal);margin-top:14px}
+
+/* boutons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  background:var(--teal);color:var(--on-teal);font-weight:800;font-size:19px;
+  padding:18px 26px;border-radius:8px;text-decoration:none;width:100%;
+  transition:transform .15s,background .15s;
+}
+.btn:hover{background:#7fe0cb;transform:translateY(-1px)}
+.btn.alt{background:transparent;border:2px solid var(--ink);color:var(--ink)}
+.btn.alt:hover{background:var(--card)}
+.btn svg{flex:none}
+
+/* hero */
+.crumbs{font-size:15px;padding:22px 0 14px;color:var(--muted)}
+.hero{background:var(--card);border-radius:14px;padding:34px 24px;margin-bottom:12px}
+.hero .where{color:var(--muted);font-weight:700;font-size:15px;margin-bottom:14px}
+h1{font-size:clamp(34px,8.5vw,64px);line-height:1.05;letter-spacing:-.03em;font-weight:900;margin-bottom:22px}
+.hero p.lead{font-size:19px;max-width:56ch;margin-bottom:28px}
+.hero-actions{display:grid;gap:12px;max-width:440px}
+.hero .note{margin-top:16px;font-size:15px;color:var(--muted)}
+
+/* sections */
+section{padding:64px 0 8px}
+h2{font-size:clamp(28px,6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:900;margin-bottom:14px}
+.intro{color:var(--muted);max-width:60ch;margin-bottom:30px}
+
+/* soins */
+.soins{display:grid;gap:0;border-top:1px solid var(--line)}
+.soin{display:grid;gap:4px;padding:20px 0;border-bottom:1px solid var(--line)}
+.soin h3{font-size:20px;font-weight:800;letter-spacing:-.01em}
+.soin p{color:var(--muted);max-width:60ch}
+
+/* équipe */
+.team{display:grid;gap:14px}
+.person{background:var(--card);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.pt{display:flex;gap:18px;align-items:center}
+.person .bio{max-width:60ch}
+.cv{list-style:none;padding:0;display:grid;gap:8px;font-size:16px;color:var(--muted)}
+.cv li{padding-left:18px;position:relative}
+.cv li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.person .lang{font-size:15px;font-weight:700}
+.parcours{border-top:1px solid var(--line)}
+.parcours summary{padding:14px 0;font-size:17px}
+.parcours summary::after{font-size:26px}
+.parcours h4{font-size:15px;font-weight:800;margin:14px 0 6px}
+.parcours .cv{border-top:0;padding-top:0}
+.parcours .cv li strong{color:var(--ink);font-weight:700}
+.avatar{
+  flex:none;width:84px;height:84px;border-radius:18px;display:grid;place-items:center;
+  font-weight:900;font-size:28px;color:#fff;background:var(--navy);overflow:hidden;
+}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.person:nth-child(2) .avatar{background:var(--purple)}
+.person:nth-child(3) .avatar{background:#0f7f6a}
+.person:nth-child(4) .avatar{background:var(--coral)}
+.person h3{font-size:20px;font-weight:800;line-height:1.2}
+.person .role{color:var(--muted);font-size:16px}
+.tag{
+  display:inline-block;margin-top:8px;font-size:14px;font-weight:700;padding:3px 10px;border-radius:99px;
+  background:var(--teal-soft);color:var(--ink);
+}
+.tag.no{background:transparent;border:1px solid var(--line);color:var(--muted)}
+
+/* horaires + contact */
+.split{display:grid;gap:14px}
+.panel{background:var(--card);border-radius:14px;padding:26px 22px}
+.panel h3{font-size:22px;font-weight:900;margin-bottom:14px}
+table{width:100%;border-collapse:collapse}
+td{padding:9px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;font-weight:700}
+tr.today td{color:var(--purple);font-weight:900}
+@media (prefers-color-scheme:dark){tr.today td{color:var(--teal)}}
+tr.closed td:last-child{color:var(--muted);font-weight:600}
+.contact-line{display:flex;gap:14px;padding:10px 0}
+.contact-line svg{flex:none;margin-top:3px}
+.contact-line a{font-weight:800;font-size:19px;text-decoration:none}
+.contact-line a:hover{text-decoration:underline}
+.map{border:0;width:100%;height:320px;border-radius:14px;margin-top:14px;background:var(--card)}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{
+  list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding:22px 0;font-weight:800;font-size:19px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:30px;font-weight:400;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:var(--muted);max-width:62ch}
+
+footer{margin-top:72px;background:var(--navy);color:#fff;padding:44px 0 36px;font-size:15px}
+footer .wrap{display:grid;gap:8px}
+footer b{font-size:19px}
+footer a{color:var(--teal)}
+
+/* bouton d'appel fixe (mobile) */
+.sticky{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:20;
+  box-shadow:0 8px 28px rgba(18,24,107,.28);
+}
+.sticky .btn{padding:16px 20px}
+
+@media (min-width:760px){
+  body{font-size:18px;padding-bottom:0}
+  .hero{padding:56px 52px}
+  .team{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr 1fr}
+  .hero-actions{grid-template-columns:1fr 1fr;max-width:620px}
+  .sticky{display:none}
+  .soins{grid-template-columns:1fr 1fr;column-gap:48px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Améliorations d'accessibilité et d'affichage. */
+[hidden]{display:none!important}
+body{overflow-wrap:break-word;padding-bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+button{font:inherit}
+a,button,summary{-webkit-tap-highlight-color:transparent}
+a[href^="tel:"]{white-space:nowrap}
+.skip-link{position:fixed;top:8px;left:8px;z-index:100;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:8px;transform:translateY(-180%)}
+.skip-link:focus{transform:none}
+.head{gap:16px}
+.logo{min-width:0}
+.menu-btn{flex:none;display:none}
+.js .menu-btn{display:grid}
+.topbar a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.status-row{display:flex;align-items:center;justify-content:center;gap:4px}
+.dot{flex:none}
+.overlay{inset:var(--header-bottom,76px) 0 0;overflow-y:auto;justify-content:flex-start;padding:24px 12px max(24px,env(safe-area-inset-bottom,0px));overscroll-behavior:contain}
+.overlay a{flex:none}
+@media(min-height:740px){.overlay{justify-content:center}}
+.noscript-nav{padding:12px 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.hero-actions{max-width:660px}
+.hero-actions .btn{font-size:17px;padding:16px 12px}
+.hero-action-label{display:block;font-weight:800}
+.hero-action-number{display:block;font-size:16px;font-weight:650}
+.hero .note{max-width:70ch}
+.section-link{display:inline-block;margin-top:16px;color:var(--ink);font-weight:750;text-underline-offset:4px}
+.rdv-grid{display:grid;gap:14px;list-style:none;padding:0;margin:24px 0 16px;counter-reset:rdv}
+.rdv-grid li{background:var(--card);border-radius:14px;padding:24px;counter-increment:rdv}
+.rdv-grid li::before{content:counter(rdv,decimal-leading-zero);display:block;color:var(--purple);font-weight:850;margin-bottom:10px;font-size:17px}
+.rdv-grid h3{font-size:20px;margin-bottom:8px}
+.rdv-grid p{color:var(--muted);font-size:16px}
+.practical-note{font-size:15px;color:var(--muted);margin-top:14px;max-width:80ch}
+.soin{grid-template-columns:132px minmax(0,1fr);gap:20px;align-content:start;padding:24px 0}
+.care-photo{width:132px;aspect-ratio:1;position:relative;overflow:hidden;border-radius:12px;background:var(--card)}
+.care-photo img{position:absolute;width:400%;height:200%;max-width:none;left:calc(-100% * var(--column));top:calc(-100% * var(--row))}
+.soin-copy{min-width:0}
+.soin h3{margin-bottom:6px;line-height:1.3;font-size:19px}
+.soin p{font-size:16px;line-height:1.6}
+.photo-caption{font-size:13px;color:var(--muted);margin-top:16px}
+.convention-note{font-size:13px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:32ch}
+.person .pt>div:last-child{min-width:0}
+.avatar{width:92px;height:108px;border-radius:14px}
+.avatar img{display:block;object-position:center 30%}
+.avatar--omar img{transform:scale(1.5);transform-origin:50% 22%}
+.person .role{line-height:1.45;margin-top:6px}
+.panel .small{color:var(--muted);font-size:15px;margin-top:12px}
+.table-caption{text-align:left;font-size:15px;color:var(--muted);margin-bottom:8px}
+th{text-align:left;font-weight:600}
+th,td{padding:9px 0;border-bottom:1px solid var(--line)}
+tr.today th{color:var(--purple);font-weight:900}
+.map-placeholder{min-height:260px;margin-top:14px;border:1px solid var(--line);border-radius:14px;background:var(--card);display:grid;place-items:center;padding:32px;text-align:center}
+.map-placeholder p{max-width:58ch;margin:0 auto 18px;color:var(--muted);font-size:16px}
+.map-placeholder h3{margin-bottom:10px;font-size:22px}
+.map-placeholder .btn{width:auto;max-width:100%;font-size:17px}
+.map-placeholder .map-links{margin:16px 0 0;font-size:14px}
+.map-placeholder[hidden],.map-wrap[hidden]{display:none}
+.map-wrap{margin-top:14px}
+.map-wrap .map{display:block;margin-top:0;height:340px}
+.map-controls{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;margin-top:10px;font-size:14px;color:var(--muted)}
+.text-button{border:0;background:none;color:var(--ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:10px 0;font:inherit}
+.footer-links{display:flex;gap:12px 24px;flex-wrap:wrap;margin-top:10px}
+.footer-links a{padding:6px 0;text-underline-offset:3px}
+.sticky{bottom:calc(12px + env(safe-area-inset-bottom,0px))}
+.legal-page{padding-top:36px;max-width:820px}
+.legal-page h1{font-size:clamp(32px,6vw,48px);line-height:1.15}
+.legal-page section{padding-top:30px}
+.legal-page h2{font-size:25px;letter-spacing:-.01em}
+.legal-page p{margin:12px 0}
+.legal-page li{margin:8px 0}
+.legal-page .back-link{display:inline-block;margin-bottom:26px;text-underline-offset:4px;font-weight:750}
+@media(max-width:480px){
+ .wrap{padding:0 18px}.logo{font-size:19px}.logo svg{width:30px}.logo small{font-size:11px}
+ .head{gap:10px}.hero{padding:28px 22px}.hero-actions{grid-template-columns:1fr}
+ .soin{grid-template-columns:96px minmax(0,1fr);gap:14px}.care-photo{width:96px}
+ .soin h3{font-size:18px}.soin p{font-size:15px}.person{padding:20px}.pt{gap:14px}
+ .avatar{width:78px;height:94px}.person h3{font-size:19px}
+}
+@media(max-width:340px){.logo{font-size:17px}.logo small{font-size:10px}.logo svg{width:26px}.soin{grid-template-columns:82px minmax(0,1fr);gap:12px}.care-photo{width:82px}.person .pt{align-items:flex-start}}
+@media(min-width:760px){body{padding-bottom:0}.rdv-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1100px){
+ .js .menu-btn{display:none}.overlay{position:static;display:flex;flex-direction:row;gap:0;overflow:visible;padding:0;border-bottom:1px solid var(--line);background:var(--bg)}
+ .overlay a{font-size:15px;width:auto;padding:12px 16px;border-radius:0}.overlay a.call{margin:0;padding:12px 20px}
+ html{scroll-padding-top:140px}
+}
+@media(prefers-color-scheme:dark){:focus-visible{outline-color:var(--teal)}.rdv-grid li::before,tr.today th{color:var(--teal)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#top">Aller au contenu</a>
+<script>document.documentElement.classList.add("js");</script>
+
+<div class="topbar">
+  <p class="status-row"><span class="dot" id="dot" aria-hidden="true"></span><b id="statut" role="status">Consultations du lundi au vendredi</b></p>
+  <p>Horaires habituels : 9h–17h · Sur rendez-vous · <a href="tel:+3224116811">02 411 68 11</a></p>
+</div>
+
+<header>
+  <div class="wrap head">
+    <a class="logo" href="#top" aria-label="Clinique Médico-Dentaire Ribaucourt, accueil">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <path d="M6 7c0-2 2-3 4-3 2.5 0 3.5 1.2 7 1.2S21.500 4 24 4c2 0 4 1 4 3 0 3-1.500 5-2 9-.5 4-1 11-3.500 11-2.200 0-1.800-7-5.500-7s-3.300 7-5.500 7C9 27 8.500 20 8 16 7.500 12 6 10 6 7Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M13 12l2 3 2-3 2 3" stroke="#e0524d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Médico-Dentaire<small>Ribaucourt · Molenbeek</small></span>
+    </a>
+    <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+  </div>
+</header>
+
+<nav class="overlay" id="menu" aria-label="Navigation principale">
+  <a href="#top">Accueil</a>
+  <a href="#soins">Nos soins</a>
+  <a href="#rendez-vous">Rendez-vous</a>
+  <a href="#equipe">L'équipe</a>
+  <a href="#horaires">Horaires</a>
+  <a href="#faq">Questions</a>
+  <a href="#contact">Contact</a>
+  <a class="call" href="tel:+3224116811">Appeler le 02 411 68 11</a>
+</nav>
+<noscript><nav class="noscript-nav" aria-label="Navigation sans JavaScript"><a href="#soins">Nos soins</a><a href="#equipe">L’équipe</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></noscript>
+
+<main id="top" tabindex="-1">
+  <div class="wrap">
+    <p class="crumbs">Clinique médico-dentaire Ribaucourt › Molenbeek-Saint-Jean</p>
+
+    <div class="hero">
+      <p class="where">Rue de Ribaucourt 77, 1080 Molenbeek-Saint-Jean</p>
+      <h1>Votre clinique médico-dentaire à Molenbeek</h1>
+      <p class="lead">Soins dentaires pour adultes et enfants, orthodontie et médecine générale. Quatre praticiens vous reçoivent sur rendez-vous, rue de Ribaucourt.</p>
+      <div class="hero-actions">
+        <a class="btn" href="tel:+3224116811">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.600 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.25c1.100.37 2.300.57 3.600.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.300.2 2.500.57 3.600a1 1 0 0 1-.25 1L6.600 10.800Z"/></svg>
+          <span><span class="hero-action-label">Prendre rendez-vous</span><span class="hero-action-number">02 411 68 11</span></span>
+        </a>
+        <a class="btn alt" href="tel:+32478274596"><span><span class="hero-action-label">Autre numéro de contact</span><span class="hero-action-number">0478 27 45 96</span></span></a>
+      </div>
+      <p class="note">Consultations en français, arabe et anglais. Le Dr Fouad Abarkan reçoit également en néerlandais et en espagnol.</p>
+      <a class="section-link" href="#equipe">Découvrir les praticiens</a>
+    </div>
+  </div>
+
+  <div class="wrap" id="soins">
+    <section>
+      <h2>Des soins pour chaque besoin</h2>
+      <p class="intro">Des soins dentaires à la médecine générale, découvrez les consultations proposées à la clinique.</p>
+      <div class="soins">
+        <article class="soin">
+          <div class="care-photo" style="--column:0;--row:0"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Examen dentaire avec un miroir : image d’illustration."></div>
+          <div class="soin-copy"><h3>Dentisterie adulte et enfant</h3><p>Contrôles, détartrage, traitement des caries et extractions. Des soins adaptés à chaque âge.</p></div>
+        </article>
+        <article class="soin">
+          <div class="care-photo" style="--column:1;--row:0"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Modèle pédagogique montrant les racines et les canaux d’une dent : image d’illustration."></div>
+          <div class="soin-copy"><h3>Endodontie</h3><p>Traitement de l’intérieur de la dent et de ses canaux pour prendre en charge une dent abîmée ou infectée.</p></div>
+        </article>
+        <article class="soin">
+          <div class="care-photo" style="--column:2;--row:0"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Appareil orthodontique à bagues : image d’illustration."></div>
+          <div class="soin-copy"><h3>Orthodontie</h3><p>Appareils classiques et aligneurs transparents pour enfants, adolescents et adultes.</p></div>
+        </article>
+        <article class="soin">
+          <div class="care-photo" style="--column:3;--row:0"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Modèle pédagogique d’un implant dentaire et de sa couronne : image d’illustration."></div>
+          <div class="soin-copy"><h3>Implantologie</h3><p>Remplacement d’une ou plusieurs dents manquantes par des implants, après un bilan adapté.</p></div>
+        </article>
+        <article class="soin">
+          <div class="care-photo" style="--column:0;--row:1"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Bridge en céramique présenté sur un modèle dentaire : image d’illustration."></div>
+          <div class="soin-copy"><h3>Prothèses dentaires</h3><p>Couronnes, bridges et prothèses pour remplacer les dents manquantes et retrouver confort de mastication et sourire.</p></div>
+        </article>
+        <article class="soin">
+          <div class="care-photo" style="--column:1;--row:1"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Choix d’une teinte dentaire avec un nuancier : image d’illustration."></div>
+          <div class="soin-copy"><h3>Esthétique dentaire</h3><p>Soins de l’apparence des dents et des gencives, avec une prise en charge adaptée à votre sourire.</p></div>
+        </article>
+        <article class="soin">
+          <div class="care-photo" style="--column:2;--row:1"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Gouttière et gel de blanchiment dentaire : image d’illustration."></div>
+          <div class="soin-copy"><h3>Blanchiment dentaire</h3><p>Éclaircissement de la teinte des dents, après une consultation pour vérifier si ce soin vous convient.</p></div>
+        </article>
+        <article class="soin">
+          <div class="care-photo" style="--column:3;--row:1"><img src="./soins-illustrations.png" width="1774" height="887" loading="lazy" decoding="async" alt="Consultation de médecine générale avec un stéthoscope : image d’illustration."></div>
+          <div class="soin-copy"><h3>Médecine générale</h3><p>Consultations, prises de sang, certificats médicaux, vaccinations et renouvellement de traitement, sur rendez-vous.</p></div>
+        </article>
+      </div>
+      <p class="photo-caption">Images d’illustration générées par IA. Elles ne représentent pas les praticiens ni les locaux de la clinique.</p>
+    </section>
+  </div>
+
+
+  <div class="wrap" id="rendez-vous">
+    <section aria-labelledby="titre-rdv">
+      <h2 id="titre-rdv">Votre rendez-vous, simplement</h2>
+      <p class="intro">Contactez la clinique pour choisir une consultation et connaître les disponibilités.</p>
+      <ol class="rdv-grid">
+        <li><h3>Appelez la clinique</h3><p>Du lundi au vendredi, de 9h à 17h, au <a href="tel:+3224116811">02 411 68 11</a> ou au <a href="tel:+32478274596">0478 27 45 96</a>.</p></li>
+        <li><h3>Précisez votre besoin</h3><p>Indiquez le soin souhaité, votre langue de consultation et, si vous en avez une, votre préférence de praticien.</p></li>
+        <li><h3>Préparez votre visite</h3><p>Pensez à votre carte d’identité et, si vous en disposez, à vos examens récents et à la liste de vos traitements.</p></li>
+      </ol>
+      <p class="practical-note">Honoraires, conventionnement et remboursement : renseignez-vous avant votre consultation. Pour un traitement, vous pouvez demander une estimation des frais.</p>
+    </section>
+  </div>
+
+  <div class="wrap" id="equipe">
+    <section>
+      <h2>Votre équipe</h2>
+      <p class="intro">Quatre praticiens aux domaines de soins complémentaires.</p>
+      <div class="team">
+        <!-- Pour ajouter une photo : remplacer les initiales par <img src="fouad.jpg" alt="Dr Fouad Abarkan"> -->
+        <article class="person">
+          <div class="pt">
+            <div class="avatar"><img src="./fouad-abarkan.webp" alt="Portrait du Dr Fouad Abarkan" width="500" height="500" loading="lazy" decoding="async"></div>
+            <div><h3>Dr Fouad Abarkan</h3><p class="role">Dentiste · Endodontie et douleurs oro-faciales</p><span class="tag no">Non conventionné</span></div>
+          </div>
+          <p class="bio">« Un diagnostic correct, c'est la clé. » Le Dr Abarkan se consacre à la prévention et à la prise en charge de la douleur, endodontie comprise, ainsi qu'aux réhabilitations complexes pluridisciplinaires. Il exerce à la clinique depuis 2015 et partage son expérience lors de conférences en Belgique et à l'étranger.</p>
+          <details class="parcours">
+            <summary>Études et formations</summary>
+            <h4>Études en Belgique</h4>
+            <ul class="cv">
+              <li><strong>Master en sciences dentaires</strong>, Université Libre de Bruxelles (2009 – 2014)</li>
+              <li><strong>Certificat de formation clinique en endodontie</strong>, ULB et hôpital Erasme (2014 – 2016), avec un échange d'un mois au département d'endodontie de la Beirut Arab University (cas complexes et chirurgie endodontique)</li>
+            </ul>
+            <h4>Formations à l'international</h4>
+            <ul class="cv">
+              <li><strong>Mini-résidence en douleur oro-faciale et troubles temporo-mandibulaires</strong>, UCLA, Los Angeles (2016)</li>
+              <li><strong>Certificat universitaire en gestion esthétique</strong> (dents et tissus mous), UCLA (2017)</li>
+              <li><strong>European Master of Aligners</strong>, certificat Invisalign (2018)</li>
+              <li><strong>Dentisterie pluridisciplinaire sous microscope</strong>, Belograd Academy (2018)</li>
+              <li>Stages auprès de spécialistes reconnus et visites d'universités en Europe, en Asie, au Moyen-Orient et aux États-Unis</li>
+            </ul>
+            <h4>Engagement et enseignement</h4>
+            <ul class="cv">
+              <li>Membre et représentant belge de l'International Association of Dental Students (IADS) pendant plus de dix ans</li>
+              <li>Participation à des congrès internationaux (IADS, FDI)</li>
+              <li>Conférencier sur la douleur oro-faciale et l'endodontie depuis 2018 : Dental Education (Belgique), Slovak Dental Days (Bratislava), université de Košice, SIDSIC (université de Ljubljana), Dental News (université de Poznań)</li>
+            </ul>
+            <h4>Expérience</h4>
+            <ul class="cv">
+              <li>Clinique Médico-Dentaire de Ribaucourt, Bruxelles (depuis 2015)</li>
+              <li>Dental Office Brussels (2019 – 2022)</li>
+              <li>Centre Dentaire Opéra-Pyramides, Paris (2017 – 2019)</li>
+            </ul>
+            <h4>Domaines de soins</h4>
+            <ul class="cv">
+              <li>Endodontie, Invisalign Go, dentisterie adulte et enfant, dentisterie restauratrice, troubles de la mastication, prothèses amovibles et fixes, problèmes maxillo-faciaux</li>
+            </ul>
+          </details>
+          <p class="lang">Parle français, arabe, anglais, néerlandais et espagnol</p>
+        </article>
+
+        <article class="person">
+          <div class="pt">
+            <div class="avatar" aria-hidden="true">TA</div>
+            <div><h3>Dr Tarik Abarkan</h3><p class="role">Dentiste</p><span class="tag">Conventionné</span></div>
+          </div>
+          <p class="bio">Dentiste à la clinique de Ribaucourt, il assure les soins dentaires courants pour adultes et enfants.</p>
+          <p class="lang">Parle français</p>
+        </article>
+
+        <article class="person">
+          <div class="pt">
+            <div class="avatar" aria-hidden="true">ZO</div>
+            <div><h3>Dr Zakia Ouzzane</h3><p class="role">Médecin généraliste et dentiste</p><span class="tag">Conventionnée</span></div>
+          </div>
+          <p class="bio">Le Dr Ouzzane reçoit en médecine générale et en dentisterie, au même endroit. Elle accompagne ses patients dans le suivi de leur santé.</p>
+          <details class="parcours">
+            <summary>Études et consultations</summary>
+            <h4>Études et appartenances</h4>
+            <ul class="cv">
+              <li><strong>Médecine générale</strong>, Université Libre de Bruxelles (1995 – 2001)</li>
+              <li>Membre de la Fédération des Associations de Médecins Généralistes de Bruxelles (FAMGB)</li>
+            </ul>
+            <h4>Consultations de médecine générale</h4>
+            <ul class="cv">
+              <li>Consultation générale, renouvellement de traitement, certificats médicaux et d'aptitude au travail ou au sport</li>
+              <li>Prises de sang, vaccinations (dont la grippe), contraception, consultation nutritionnelle</li>
+            </ul>
+          </details>
+          <p class="lang">Parle français, arabe et anglais</p>
+        </article>
+
+        <article class="person">
+          <div class="pt">
+            <div class="avatar avatar--omar"><img src="./omar-al-bairat.webp" alt="Portrait du Dr Omar Al Bairat" width="500" height="500" loading="lazy" decoding="async"></div>
+            <div><h3>Dr Omar Al Bairat</h3><p class="role">Dentiste · Orthodontie</p><p class="convention-note">Conventionnement : renseignez-vous lors de la prise de rendez-vous.</p></div>
+          </div>
+          <p class="bio">Orthodontie pour enfants, adolescents et adultes : orthodontie interceptive précoce, traitements classiques et aligneurs transparents (Invisalign), avec une approche attentive et détendue.</p>
+          <details class="parcours">
+            <summary>Études et formations</summary>
+            <h4>Études</h4>
+            <ul class="cv">
+              <li><strong>Doctorat en médecine dentaire</strong>, Université Mohammed V, Faculté de médecine dentaire (Rabat)</li>
+              <li><strong>Master en sciences dentaires</strong>, Université Libre de Bruxelles</li>
+              <li><strong>Master de spécialisation en dentisterie générale</strong>, Université Libre de Bruxelles</li>
+              <li><strong>Diplôme universitaire en orthodontie</strong>, Université Internationale Abulcasis des Sciences de la Santé</li>
+            </ul>
+            <h4>Associations</h4>
+            <ul class="cv">
+              <li>Membre de la Moroccan Orthodontic Society</li>
+              <li>Membre de l'Association Marocaine de Prévention Buccodentaire</li>
+              <li>Membre honoraire à vie de l'International Association of Dental Students (IADS)</li>
+            </ul>
+            <h4>Congrès</h4>
+            <ul class="cv">
+              <li>Congrès annuel international de la Fédération Dentaire Internationale (FDI)</li>
+              <li>Congrès annuel de la Moroccan Orthodontic Society</li>
+              <li>Congrès annuel Dental Education</li>
+            </ul>
+            <h4>Orthodontie proposée</h4>
+            <ul class="cv">
+              <li>Orthodontie de l'enfant et de l'adolescent, orthodontie de l'adulte, aligneurs invisibles</li>
+              <li>Première consultation d'environ 15 minutes</li>
+            </ul>
+          </details>
+          <p class="lang">Parle français, arabe et anglais</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap" id="horaires">
+    <section>
+      <h2>Horaires et accès</h2>
+      <div class="split" id="contact">
+        <div class="panel">
+          <h3>Horaires d'ouverture</h3>
+          <table id="hours">
+            <caption class="table-caption">Horaires habituels de la clinique</caption>
+            <tr data-d="1"><th scope="row">Lundi</th><td>9h00 – 17h00</td></tr>
+            <tr data-d="2"><th scope="row">Mardi</th><td>9h00 – 17h00</td></tr>
+            <tr data-d="3"><th scope="row">Mercredi</th><td>9h00 – 17h00</td></tr>
+            <tr data-d="4"><th scope="row">Jeudi</th><td>9h00 – 17h00</td></tr>
+            <tr data-d="5"><th scope="row">Vendredi</th><td>9h00 – 17h00</td></tr>
+            <tr data-d="6" class="closed"><th scope="row">Samedi</th><td>Fermé</td></tr>
+            <tr data-d="0" class="closed"><th scope="row">Dimanche</th><td>Fermé</td></tr>
+          </table>
+          <p class="small">Hors jours fériés et fermetures exceptionnelles. Appelez avant de vous déplacer.</p>
+        </div>
+        <div class="panel">
+          <h3>Nous contacter</h3>
+          <div class="contact-line">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.600 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.25c1.100.37 2.300.57 3.600.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.300.2 2.500.57 3.600a1 1 0 0 1-.25 1L6.600 10.800Z"/></svg>
+            <div><a href="tel:+3224116811">02 411 68 11</a><br><a href="tel:+32478274596">0478 27 45 96</a></div>
+          </div>
+          <div class="contact-line">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.200 7 13 7 13s7-7.800 7-13a7 7 0 0 0-7-7Zm0 9.500A2.500 2.500 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5Z"/></svg>
+            <div>Rue de Ribaucourt 77<br>1080 Molenbeek-Saint-Jean</div>
+          </div>
+          <p class="small">Pour connaître les possibilités de stationnement ou les conditions d’accès au cabinet, contactez-nous avant votre visite.</p>
+          <a class="btn" style="margin-top:12px" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rue+de+Ribaucourt+77+1080+Molenbeek-Saint-Jean">Préparer mon itinéraire</a>
+        </div>
+      </div>
+      <div class="map-placeholder" id="map-placeholder">
+        <div>
+          <h3>Nous trouver à Molenbeek</h3>
+          <p>Rue de Ribaucourt 77, 1080 Molenbeek-Saint-Jean.</p>
+          <p>La carte Google Maps se charge uniquement si vous le choisissez. Son affichage établit une connexion avec Google, qui peut traiter des données de navigation.</p>
+          <button class="btn" id="load-map" type="button" hidden>Afficher la carte Google Maps</button>
+          <p class="map-links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Rue+de+Ribaucourt+77+1080+Molenbeek-Saint-Jean" target="_blank" rel="noopener noreferrer">Ouvrir l’itinéraire sur Google Maps ↗</a> · <a href="./confidentialite.html">Confidentialité</a></p>
+        </div>
+      </div>
+      <div class="map-wrap" id="map-wrap" hidden>
+        <div id="map-container"></div>
+        <div class="map-controls"><span>Carte fournie par Google Maps.</span><button class="text-button" id="unload-map" type="button">Fermer la carte</button></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap" id="faq">
+    <section>
+      <h2>Vos questions</h2>
+      <p class="intro">Besoin d'autre chose ? Appelez-nous, on vous répond.</p>
+      <div class="faq">
+        <details>
+          <summary>Que faire en cas d’urgence dentaire ?</summary>
+          <p>Pendant les horaires d’ouverture, appelez le <a href="tel:+3224116811">02 411 68 11</a> pour expliquer votre situation et connaître les possibilités de consultation. En dehors de ces horaires, contactez un service de garde dentaire. En cas d’urgence médicale grave, appelez le <a href="tel:112">112</a>.</p>
+        </details>
+        <details>
+          <summary>Quels documents préparer pour une première visite ?</summary>
+          <p>Pensez à votre carte d’identité et, si vous en disposez, à vos examens récents et à la liste de vos traitements. Appelez la clinique pour toute question concernant votre première consultation.</p>
+        </details>
+
+        <details>
+          <summary>Comment prendre rendez-vous ?</summary>
+          <p>Par téléphone au 02 411 68 11 ou au 0478 27 45 96, du lundi au vendredi de 9h à 17h. Les consultations se font sur rendez-vous.</p>
+        </details>
+        <details>
+          <summary>Vos dentistes sont-ils conventionnés ?</summary>
+          <p>Le Dr Tarik Abarkan et le Dr Zakia Ouzzane sont conventionnés. Le Dr Fouad Abarkan ne l’est pas. Pour le Dr Omar Al Bairat, renseignez-vous auprès de la clinique avant votre rendez-vous. Les honoraires et les remboursements dépendent du praticien et du soin ; demandez une estimation avant le traitement.</p>
+        </details>
+        <details>
+          <summary>Proposez-vous des aligneurs transparents ?</summary>
+          <p>Oui. Le Dr Omar Al Bairat propose des aligneurs transparents (Invisalign) ainsi que l'orthodontie classique, pour enfants, adolescents et adultes. Une première consultation d'orthodontie dure environ 15 minutes.</p>
+        </details>
+        <details>
+          <summary>Quelles langues parlez-vous ?</summary>
+          <p>Notre équipe vous accueille en français, arabe et anglais. Le Dr Fouad Abarkan consulte aussi en néerlandais et en espagnol.</p>
+        </details>
+        <details>
+          <summary>Comment puis-je payer ?</summary>
+          <p>Par carte bancaire ou en espèces, directement à la clinique.</p>
+        </details>
+        <details>
+          <summary>Soignez-vous les enfants ?</summary>
+          <p>Oui, la clinique propose de la dentisterie pour adultes et pour enfants, ainsi que de l'orthodontie.</p>
+        </details>
+        <details>
+          <summary>Quels soins proposez-vous ?</summary>
+          <p>Dentisterie générale, endodontie, orthodontie, implantologie, prothèses, esthétique dentaire, blanchiment et médecine générale.</p>
+        </details>
+        <details>
+          <summary>Où se trouve la clinique ?</summary>
+          <p>Rue de Ribaucourt 77, 1080 Molenbeek-Saint-Jean. Cherchez l'enseigne « Clinique Médico Dentaire Ribaucourt » en façade.</p>
+        </details>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer id="footer">
+  <div class="wrap">
+    <b>Clinique Médico-Dentaire Ribaucourt</b>
+    <span>Rue de Ribaucourt 77, 1080 Molenbeek-Saint-Jean</span>
+    <span><a href="tel:+3224116811">02 411 68 11</a> · <a href="tel:+32478274596">0478 27 45 96</a></span>
+    <span>Du lundi au vendredi, 9h – 17h · Sur rendez-vous</span>
+    <nav class="footer-links" aria-label="Informations du site"><a href="./mentions-legales.html">Informations légales</a><a href="./confidentialite.html">Confidentialité</a></nav>
+  </div>
+</footer>
+
+<div class="sticky" id="mobile-call">
+  <a class="btn" href="tel:+3224116811">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.600 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.25c1.100.37 2.300.57 3.600.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.300.2 2.500.57 3.600a1 1 0 0 1-.25 1L6.600 10.800Z"/></svg>
+    Appeler la clinique
+  </a>
+</div>
+
+<script>
+
+// Navigation : fermeture au clavier, focus contenu, menu adapté à la hauteur disponible.
+(() => {
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('menu');
+  const header = document.querySelector('header');
+  const main = document.querySelector('main');
+  const footer = document.querySelector('footer');
+  const call = document.getElementById('mobile-call');
+  const desktop = matchMedia('(min-width:1100px)');
+  let previousFocus;
+  function menuPosition() {
+    document.documentElement.style.setProperty('--header-bottom', Math.max(0, header.getBoundingClientRect().bottom) + 'px');
+  }
+  function setMenu(open, restoreFocus = true) {
+    const wasOpen = btn.getAttribute('aria-expanded') === 'true';
+    open = open && !desktop.matches;
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    menu.classList.toggle('show', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    [main, footer, call].filter(Boolean).forEach(el => el.inert = open);
+    if (open) {
+      previousFocus = document.activeElement;
+      menuPosition();
+      menu.querySelector('a').focus({preventScroll:true});
+    } else if (wasOpen && restoreFocus && !desktop.matches) {
+      (previousFocus || btn).focus({preventScroll:true});
+    }
+  }
+  btn.addEventListener('click', () => setMenu(btn.getAttribute('aria-expanded') !== 'true'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    setMenu(false, false);
+    if (a.hash) {
+      const target = document.getElementById(a.hash.slice(1));
+      if (target) {
+        target.setAttribute('tabindex','-1');
+        target.focus({preventScroll:true});
+      }
+    }
+  }));
+  document.addEventListener('keydown', e => {
+    if (btn.getAttribute('aria-expanded') !== 'true') return;
+    if (e.key === 'Escape') { e.preventDefault(); setMenu(false); }
+    if (e.key === 'Tab') {
+      const items = [btn, ...menu.querySelectorAll('a')];
+      const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  window.addEventListener('resize', () => {
+    menuPosition();
+    if (desktop.matches) setMenu(false, false);
+  });
+  window.addEventListener('pageshow', () => setMenu(false, false));
+  // Le bouton fixe apparaît après les boutons de l’accueil pour éviter de les masquer.
+  if (call && 'IntersectionObserver' in window) {
+    call.hidden = true;
+    new IntersectionObserver(([entry]) => {
+      call.hidden = entry.isIntersecting || entry.boundingClientRect.bottom > 0;
+    }).observe(document.querySelector('.hero-actions'));
+  }
+
+  // Carte tierce : aucune requête Google Maps avant une action explicite.
+  const load = document.getElementById('load-map');
+  const unload = document.getElementById('unload-map');
+  const placeholder = document.getElementById('map-placeholder');
+  const mapWrap = document.getElementById('map-wrap');
+  const mapContainer = document.getElementById('map-container');
+  load.hidden = false;
+  load.addEventListener('click', () => {
+    const frame = document.createElement('iframe');
+    frame.className = 'map';
+    frame.title = 'Carte : Rue de Ribaucourt 77, Molenbeek-Saint-Jean';
+    frame.referrerPolicy = 'no-referrer';
+    frame.src = 'https://maps.google.com/maps?q=Rue+de+Ribaucourt+77+1080+Molenbeek-Saint-Jean&output=embed';
+    mapContainer.replaceChildren(frame);
+    placeholder.hidden = true;
+    mapWrap.hidden = false;
+    unload.focus({preventScroll:true});
+  });
+  unload.addEventListener('click', () => {
+    mapContainer.replaceChildren();
+    mapWrap.hidden = true;
+    placeholder.hidden = false;
+    load.focus({preventScroll:true});
+  });
+})();
+
+// Horaires à Bruxelles. Ajouter ici les dates de fermeture confirmées (AAAA-MM-JJ).
+(() => {
+  const fermeturesExceptionnelles = [];
+  const formatter = new Intl.DateTimeFormat('en-GB', {
+    timeZone:'Europe/Brussels', weekday:'short', year:'numeric', month:'2-digit', day:'2-digit',
+    hour:'2-digit', minute:'2-digit', hourCycle:'h23'
+  });
+  const weekdays = {Sun:0, Mon:1, Tue:2, Wed:3, Thu:4, Fri:5, Sat:6};
+  function easter(year) {
+    const a=year%19, b=Math.floor(year/100), c=year%100, d=Math.floor(b/4), e=b%4;
+    const f=Math.floor((b+8)/25), g=Math.floor((b-f+1)/3), h=(19*a+b-d-g+15)%30;
+    const i=Math.floor(c/4), k=c%4, l=(32+2*e+2*i-h-k)%7, m=Math.floor((a+11*h+22*l)/451);
+    const month=Math.floor((h+l-7*m+114)/31), day=((h+l-7*m+114)%31)+1;
+    return new Date(Date.UTC(year,month-1,day,12));
+  }
+  function holidays(year) {
+    const dates=new Set(['01-01','05-01','07-21','08-15','11-01','11-11','12-25'].map(d=>year+'-'+d));
+    const sunday=easter(year);
+    [1,39,50].forEach(offset=>{
+      const date=new Date(sunday);
+      date.setUTCDate(date.getUTCDate()+offset);
+      dates.add(date.toISOString().slice(0,10));
+    });
+    return dates;
+  }
+  function updateHours() {
+    try {
+      const parts=Object.fromEntries(formatter.formatToParts(new Date()).map(p=>[p.type,p.value]));
+      const weekday=weekdays[parts.weekday];
+      const date=parts.year+'-'+parts.month+'-'+parts.day;
+      const minutes=Number(parts.hour)*60+Number(parts.minute);
+      const dot=document.getElementById('dot');
+      let status, isOpen=false;
+      if (fermeturesExceptionnelles.includes(date)) status='Fermeture exceptionnelle aujourd’hui';
+      else if (holidays(Number(parts.year)).has(date)) status='Jour férié : ouverture à confirmer par téléphone';
+      else if (weekday>=1 && weekday<=5 && minutes>=540 && minutes<1020) {
+        status='Ouvert selon les horaires habituels · fermeture à 17h';
+        isOpen=true;
+      } else if (weekday>=1 && weekday<=5 && minutes<540) status='Fermé · ouverture habituelle aujourd’hui à 9h';
+      else status='Fermé selon les horaires habituels';
+      document.getElementById('statut').textContent=status;
+      dot.classList.toggle('open',isOpen);
+      document.querySelectorAll('#hours tr[data-d]').forEach(row=>{
+        const today=Number(row.dataset.d)===weekday;
+        row.classList.toggle('today',today);
+        if(today)row.setAttribute('aria-current','date');else row.removeAttribute('aria-current');
+      });
+    } catch (_) {
+      document.getElementById('statut').textContent='Consultations du lundi au vendredi';
+    }
+  }
+  updateHours();
+  setInterval(updateHours,30000);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateHours()});
+})();
+
+</script>
+</body>
+</html>
