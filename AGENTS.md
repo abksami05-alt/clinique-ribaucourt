@@ -6,7 +6,7 @@ Répondre toujours en français.
 
 - Reprendre le développement à partir des fichiers présents dans ce dossier.
 - Conserver les contenus et les modifications existantes. La demande du 12 novembre 2026 autorise une refonte du style et de la police inspirée de https://dentaleducation.be/.
-- Travailler localement pour l’instant. Ne pas déployer ni modifier le domaine ou ses DNS sans demande explicite.
+- Travailler localement par défaut. Le 12 novembre 2026, l’utilisateur a explicitement demandé de publier la refonte sur GitHub et Cloudflare pour remplacer l’ancienne version. Ne pas modifier le domaine ou ses DNS sans demande explicite.
 
 ## Contenu à conserver
 
@@ -18,7 +18,7 @@ Répondre toujours en français.
 
 ## Hébergement et domaine
 
-- Hébergement prévu : Cloudflare, en remplacement de Netlify.
+- Hébergement identifié : Cloudflare Workers, Worker existant `clinique-ribaucourt`, compte `d958c715ae83a8739ed009fc279b2c1c`. Aucun projet Cloudflare Pages présent dans ce compte lors de la vérification.
 - La migration du domaine n’a pas été confirmée. Ne pas considérer les références à Cloudflare dans les pages comme une preuve de migration effective.
 
 ## Prochaine évolution
@@ -54,3 +54,12 @@ Ne pas inventer ces informations ni déduire le conventionnement du Dr Omar de c
 - Inspiration : https://dentaleducation.be/, bleu #3434FF, blanc et bleu nuit, boutons peu arrondis et grands titres.
 - Police Plus Jakarta Sans stockée localement dans `fonts/`.
 - Contenus, illustrations, portraits et fonctions existantes conservés.
+
+## Publication du 12 novembre 2026
+
+- Dépôt existant : https://github.com/abksami05-alt/clinique-ribaucourt ; branche `main`.
+- Refonte publiée sur le Worker existant, sans création d’un autre site.
+- Adresse publique : https://clinique-ribaucourt.abk-sami-05.workers.dev
+- Version Cloudflare publiée : `6a0dc54f-42ee-4404-96c0-86e23e7f9bd0`.
+- La zone `clinique-ribaucourt.com` est en attente chez Cloudflare ; les serveurs de noms observés restent chez OVH. Aucun changement DNS effectué. Ne pas annoncer que le domaine personnalisé affiche cette version sans le vérifier.
+- La publication directe contient uniquement les fichiers publics, sans AGENTS.md ni les captures du dossier `apercus/`.
