@@ -6,7 +6,7 @@
 <title>Dentiste et médecine générale à Molenbeek | Clinique Ribaucourt</title>
 <meta name="description" content="Clinique médico-dentaire Ribaucourt à Molenbeek : soins dentaires, orthodontie et médecine générale. Du lundi au vendredi, 9h–17h. Rendez-vous : 02 411 68 11.">
 
-<meta name="theme-color" content="#3434ff">
+<meta name="theme-color" content="#245B72">
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="https://clinique-ribaucourt.com/">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
@@ -39,17 +39,8 @@
 
 <header>
   <div class="wrap head">
-    <a class="logo" href="#top" aria-label="Clinique Médico-Dentaire Ribaucourt, accueil">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-        <path d="M6 7c0-2 2-3 4-3 2.5 0 3.5 1.2 7 1.2S21.500 4 24 4c2 0 4 1 4 3 0 3-1.500 5-2 9-.5 4-1 11-3.500 11-2.200 0-1.800-7-5.500-7s-3.300 7-5.500 7C9 27 8.500 20 8 16 7.500 12 6 10 6 7Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
-        <path d="M13 12l2 3 2-3 2 3" stroke="#e0524d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>Médico-Dentaire<small>Ribaucourt · Molenbeek</small></span>
-    </a>
+    <a class="logo" href="#top" aria-label="Clinique Médico-Dentaire Ribaucourt, accueil"><img class="brand-logo" src="./assets/brand/logo-ribaucourt.svg" alt="Clinique Médico Dentaire Ribaucourt" width="673" height="189" fetchpriority="high"></a>
     <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
-  </div>
-</header>
-
 <nav class="overlay" id="menu" aria-label="Navigation principale">
   <a href="#top">Accueil</a>
   <a href="#soins">Nos soins</a>
@@ -60,6 +51,10 @@
   <a href="#contact">Contact</a>
   <a class="call" href="tel:+3224116811">Appeler le 02 411 68 11</a>
 </nav>
+  </div>
+</header>
+
+
 <noscript><nav class="noscript-nav" aria-label="Navigation sans JavaScript"><a href="#soins">Nos soins</a><a href="#equipe">L’équipe</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a></nav></noscript>
 
 <main id="top" tabindex="-1">
@@ -67,6 +62,7 @@
     <p class="crumbs">Clinique médico-dentaire Ribaucourt › Molenbeek-Saint-Jean</p>
 
     <div class="hero">
+      <div class="hero-copy">
       <p class="where">Rue de Ribaucourt 77, 1080 Molenbeek-Saint-Jean</p>
       <h1>Votre clinique médico-dentaire à Molenbeek</h1>
       <p class="lead">Soins dentaires pour adultes et enfants, orthodontie et médecine générale. Quatre praticiens vous reçoivent sur rendez-vous, rue de Ribaucourt.</p>
@@ -79,6 +75,8 @@
       </div>
       <p class="note">Consultations en français, arabe et anglais. Le Dr Fouad Abarkan reçoit également en néerlandais et en espagnol.</p>
       <a class="section-link" href="#equipe">Découvrir les praticiens</a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="brand-orbit"><img src="./assets/brand/symbole-ribaucourt.svg" alt="" width="300" height="300"></div><span>Rue de Ribaucourt 77 · Molenbeek</span></div>
     </div>
   </div>
 
@@ -128,6 +126,7 @@
 
   <div class="wrap" id="rendez-vous">
     <section aria-labelledby="titre-rdv">
+      <span class="section-label">Sur rendez-vous</span>
       <h2 id="titre-rdv">Votre rendez-vous, simplement</h2>
       <p class="intro">Contactez la clinique pour choisir une consultation et connaître les disponibilités.</p>
       <ol class="rdv-grid">
@@ -308,6 +307,7 @@
 
   <div class="wrap" id="faq">
     <section>
+      <span class="section-label">À votre écoute</span>
       <h2>Vos questions</h2>
       <p class="intro">Besoin d'autre chose ? Appelez-nous, on vous répond.</p>
       <div class="faq">
@@ -359,7 +359,7 @@
 
 <footer id="footer">
   <div class="wrap">
-    <b>Clinique Médico-Dentaire Ribaucourt</b>
+    <a class="footer-brand" href="./index.html" aria-label="Clinique Médico Dentaire Ribaucourt, accueil"><img src="./assets/brand/logo-ribaucourt-blanc.svg" alt="Clinique Médico Dentaire Ribaucourt" width="673" height="189" loading="lazy"></a>
     <span>Rue de Ribaucourt 77, 1080 Molenbeek-Saint-Jean</span>
     <span><a href="tel:+3224116811">02 411 68 11</a> · <a href="tel:+32478274596">0478 27 45 96</a></span>
     <span>Du lundi au vendredi, 9h – 17h · Sur rendez-vous</span>
@@ -384,7 +384,7 @@
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
   const call = document.getElementById('mobile-call');
-  const desktop = matchMedia('(min-width:1100px)');
+  const desktop = matchMedia('(min-width:1200px)');
   let previousFocus;
   function menuPosition() {
     document.documentElement.style.setProperty('--header-bottom', Math.max(0, header.getBoundingClientRect().bottom) + 'px');

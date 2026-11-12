@@ -63,3 +63,17 @@ Ne pas inventer ces informations ni déduire le conventionnement du Dr Omar de c
 - Version Cloudflare publiée : `6a0dc54f-42ee-4404-96c0-86e23e7f9bd0`.
 - La zone `clinique-ribaucourt.com` est en attente chez Cloudflare ; les serveurs de noms observés restent chez OVH. Aucun changement DNS effectué. Ne pas annoncer que le domaine personnalisé affiche cette version sans le vérifier.
 - La publication directe contient uniquement les fichiers publics, sans AGENTS.md ni les captures du dossier `apercus/`.
+
+## Identité officielle fournie le 12 novembre 2026
+
+- L’utilisateur a fourni un SVG et un PS contenant le même logo horizontal, ainsi qu’une planche JPEG de déclinaisons. Les originaux sont archivés dans `docs/identite/`.
+- Ces logos achetés remplacent l’ancien pictogramme : préserver leurs tracés et leurs proportions.
+- Sources web : `assets/brand/logo-ribaucourt.svg`, version monochrome blanche et symbole seul dérivés des tracés fournis.
+- Palette officielle du SVG : bleu ciel #73CAF3, rose #EF797F, gris #575756. Texte foncé #2F444D ; boutons #245B72 pour le contraste. Cette identité remplace le thème bleu électrique précédent.
+- Police locale Plus Jakarta Sans conservée ; corps lisible de 14 px minimum dans les cartes.
+- Une analyse et une revue visuelle sont confiées à un agent design, à la demande explicite de l’utilisateur.
+
+## Mise en ligne de l’identité officielle
+
+- Le 12 novembre 2026, l’utilisateur a explicitement demandé de remplacer aussi la version GitHub et Cloudflare par le site avec les nouveaux logos et la nouvelle palette.
+- Réutiliser le dépôt et le Worker existants ; ne pas modifier le domaine ni ses DNS.
